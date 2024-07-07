@@ -1,0 +1,148 @@
+.about-container {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+  }
+  
+  .about-container-background img {
+    height: 79vh;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .about-container-information {
+    position: absolute;
+    top: 80%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;line-height: -0;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInLeft 3s;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .about-container-information span {
+    color: #b5afdc;
+  }
+  .about-container-image {
+    position: relative;
+    height: 50vh;
+    width: 40vw;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+  }
+  
+  .about-container-image span {
+    position: absolute;
+    margin-top: -20rem;
+    margin-left: 4rem;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 90deg)) translateZ(120px);
+  }
+  
+  .about-container-image span img {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 2s;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: perspective(1000px) rotateY(0deg);
+  
+    }
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.about-container-overview-detail {
+  position:absolute;
+  top: 28.9rem;
+  height: 40vh;
+  width: 100%; /* Adjusted width for responsiveness */
+  background: #05021a;
+  border-bottom: white 1px solid;
+}
+
+.about-container-overview-detail h2{
+   color: rgb(124, 127, 173);
+   margin-left: 11rem;
+   font-family: serif;
+   margin-top: -1rem;
+}
+
+.about-container-overview-detail h4{
+  margin-left: 11rem;
+  color: rgb(252, 249, 249);
+  font-family: serif;
+}
+
+.about-container-overview-detail p {
+  color:  rgb(218, 204, 226);
+  position: relative;
+  margin-top: 1rem;
+  margin-left: -29rem;
+  font-family: serif;
+  text-align: center;
+  line-height: 0; /* Adjusted line height */
+}
+
+#pera1{
+  margin-left: -30.2rem;
+  color: rgb(218, 204, 226);
+}
+
+#pera2{
+  margin-left: -36.3rem;
+  color: rgb(218, 204, 226);
+}
+
+.about-container-resume button {
+   color: #05021a;
+   position: absolute;
+   background: white;
+   display: flex;
+   margin-top: -13rem;
+   margin-left:60rem;
+   padding: 8px;
+}
+
+.about-container-resume button:hover{
+   color: white;
+   background:#05021a ;
+}
+
+.about-container-skills {
+  position:absolute;
+  top: 43.6rem;
+  height: 46vh;
+  width: 100%; /* Adjusted width for responsiveness */
+  background: #05021a;
+  border-bottom: white 1px solid;
+}
+.about-container-skills-add h2{
+   color: rgb(218, 204, 226);
+   margin-left: 11rem;
+   font-size: 1.6rem;
+   font-family: serif;
+   
+}
+
+.about-container-skills-add img {
+    height: 3rem;
+    width: 3rem;
+    margin-top: 2rem;
+    margin-left: 13rem;
+}
