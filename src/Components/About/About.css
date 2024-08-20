@@ -2,75 +2,61 @@
     position: relative;
     height: 50vh;
     width: 100%;
-  }
   
-  .about-container-background img {
-    height: 79vh;
-    width: 100%;
-    object-fit: cover;
-    display: block;
   }
   
   .about-container-information {
     position: absolute;
     top: 80%;
-    left: 72%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    display: flex;line-height: -0;
+    display: flex;
+    line-height: -0;
     flex-direction: column;
     align-items: center;
-    animation: fadeInLeft 3s;
     font-size: 1.5rem;
-    text-align: center;
+    text-align: center; animation: fadeInUp 1s ease-in-out;
   }
-  
-  .about-container-information span {
-    color: #b5afdc;
-  }
-  .about-container-image {
-    position: relative;
-    height: 50vh;
-    width: 40vw;
-    transform-style: preserve-3d;
-    animation: rotate 30s linear infinite;
-  }
-  
-  .about-container-image span {
-    position: absolute;
-    margin-top: -20rem;
-    margin-left: 4rem;
-    display: flex;
-    align-items: center;
-    width: 40%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 90deg)) translateZ(120px);
-  }
-  
-  .about-container-image span img {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    border-radius: 10px;
-    object-fit: cover;
-    transition: 2s;
-  }
-  
-  @keyframes rotate {
-    0% {
-      transform: perspective(1000px) rotateY(0deg);
-  
-    }
-    100% {
-        transform: perspective(1000px) rotateY(360deg);
-    }
-}
 
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+   
+  .about-container-information h2 {
+    animation: fadeIn 1s ease-in-out 0.5s;
+    color: white;
+    animation-fill-mode: both;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+  }
+
+  .about-container-information h5 {
+    margin-top: -1.2rem;
+    color: white;
+    font-size: 1.5rem;
+    animation: fadeIn 1s ease-in-out 1s;
+    animation-fill-mode: both;
+  }
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+  
 .about-container-overview-detail {
   position:absolute;
-  top: 28.9rem;
-  height: 40vh;
+  top: 29.3rem;
+  height: 50vh;
   width: 100%; /* Adjusted width for responsiveness */
   background: #05021a;
   border-bottom: white 1px solid;
@@ -78,13 +64,19 @@
 
 .about-container-overview-detail h2{
    color: rgb(124, 127, 173);
-   margin-left: 11rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
    font-family: serif;
    margin-top: -1rem;
 }
 
 .about-container-overview-detail h4{
-  margin-left: 11rem;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
   color: rgb(252, 249, 249);
   font-family: serif;
 }
@@ -93,51 +85,85 @@
   color:  rgb(218, 204, 226);
   position: relative;
   margin-top: 1rem;
-  margin-left: -29rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: serif;
+  font-size: 1.1rem;
   text-align: center;
-  line-height: 0; /* Adjusted line height */
+  line-height: 0; 
+  transition: text-shadow 0.3s ease-in-out;
 }
 
 #pera1{
-  margin-left: -30.2rem;
   color: rgb(218, 204, 226);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: text-shadow 0.3s ease-in-out;
 }
 
 #pera2{
-  margin-left: -36.3rem;
   color: rgb(218, 204, 226);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: text-shadow 0.3s ease-in-out;
 }
 
-.about-container-resume button {
-   color: #05021a;
-   position: absolute;
-   background: white;
-   display: flex;
-   margin-top: -13rem;
-   margin-left:60rem;
-   padding: 8px;
+.about-container-overview-detail p:hover,
+#pera1:hover,
+#pera2:hover {
+  text-shadow:0 0 5px #5D3587,
+               0 0 10px  #522f5a,
+               0 0 15px #521954
+            
 }
 
-.about-container-resume button:hover{
-   color: white;
-   background:#05021a ;
+
+  .resbtn {
+    position: absolute;
+    background:rgba(200, 144, 71, 0.497);
+    display: flex;
+    margin-top: -7.5rem;
+    margin-left: 35rem;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-weight: 100;
+    font-size: 1rem;
+  }
+
+.resumebutton {
+  color:rgb(29, 5, 42);
+  text-decoration: none;
 }
+
+.resbtn:hover {
+    box-shadow: 0 0 36px rgba(153, 99, 179, 0.7); 
+}
+
+
+
+
 
 .about-container-skills {
   position:absolute;
-  top: 43.6rem;
-  height: 46vh;
+  top: 47.63rem;
+  height: 78vh;
   width: 100%; /* Adjusted width for responsiveness */
   background: #05021a;
   border-bottom: white 1px solid;
 }
+
 .about-container-skills-add h2{
-   color: rgb(218, 204, 226);
-   margin-left: 11rem;
-   font-size: 1.6rem;
+   margin-top: 5rem;
+   color: #dacce2;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.9rem;
    font-family: serif;
-   
 }
 
 .about-container-skills-add img {
@@ -146,3 +172,78 @@
     margin-top: 2rem;
     margin-left: 13rem;
 }
+
+.about-container-video{
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 430px) {
+  .about-container {
+    width: 28.8rem;
+  }
+  
+  .about-container-overview-detail{
+    height: 17rem;
+    margin-left: -4.3rem;
+    
+  }
+  .about-container-information h2 {
+    font-size: 1em;
+    margin-left: -16rem;
+    margin-top: -13rem;
+  }
+
+  .about-container-information h5 {
+    font-size: 0.9rem;
+    margin-top: -0.7rem;
+    margin-left: -16rem;
+  }
+
+  .resbtn {
+    padding: 9px 12px;
+    font-size: 0.8rem;
+    margin-top: -28rem;
+    margin-left: 7.9rem;
+  }
+
+  .about-container-skills {
+    margin-top: 1.7rem;
+    margin-left: -4rem;
+  }
+
+  .about-container-skills-add h2{
+    margin-top: 2rem;
+  }
+
+  .about-container-skills-add img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .about-container-overview-detail h4,
+  .about-container-overview-detail h2
+  {
+    font-size: 0.9em;
+  }
+
+  .about-container-overview-detail p {
+    margin-top: 1rem;
+    font-size: 0.5rem;
+  }
+
+  .about-container-skills {
+    height: 81.8vh;
+    margin-top: -1.3rem;
+  }
+
+  .about-container-video{
+    width: 46vw;
+    height: 79vh;
+  }
+}
+
+
+
+

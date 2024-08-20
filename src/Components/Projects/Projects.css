@@ -1,0 +1,83 @@
+.project{
+    position:relative;
+    top: 57.9rem;
+    height: 120vh;
+    width: 100%; 
+    background: #05021a;
+    border-bottom: white 1px solid;
+}
+
+.project-container h2{
+    position:absolute;
+    color: white; 
+    margin-left: 36.5rem;
+    margin-top: 7.8rem;
+    font-family: serif;
+    font-size: 1.7rem;
+}
+
+.project-container h5{
+    position:absolute ;
+    color: #a18bad;
+    margin-left: 37rem;
+    margin-top: 6.2rem;
+    font-size: 1.2rem;
+    font-family: serif
+}
+
+.project-container h6{
+    position:absolute;
+    color: #a18bad;
+    margin-left: 19.4rem;
+    margin-top: 10rem;
+    font-family: sserif;
+    font-size: 1.1rem;
+}
+
+.project-container-card{
+    position: absolute;
+    margin-top: 17rem;
+    margin-left: 6rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.project a {
+    color: blue; 
+    text-decoration: none; 
+  }
+  
+  .project a:hover {
+    text-decoration: underline; 
+  }
+
+  .project-card:hover{
+    transform: rotate3d(0.2,2,0,20deg);
+  }
+   
+  @media screen and (max-width: 430px){
+    .project{
+        margin-top: 7rem;
+        height: 160vh;
+
+    }
+
+    .project-container h5{
+       margin-left: 7.5rem;  
+    }
+    .project-container h2{
+      margin-left: 7.5rem;
+      font-size: 1.3rem;
+    }
+
+    .project-container h6{
+      margin-left: 1rem;
+      font-size: 0.45rem;
+    }
+
+    .project-container-card{
+      flex-direction: column;
+      margin-left: 1rem;
+      gap: 4rem;
+    }
+  }

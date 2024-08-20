@@ -1,0 +1,28 @@
+/* Typewriter.css */
+
+.typewriter p {
+    display: inline-block;
+    font-family: "Fijalla One",serif;
+    font-size: 55px;
+    white-space: nowrap;
+    margin-top: 4.5rem;
+    color: white;
+    border-right: 3px solid;
+    animation: blink 0.75s step-end infinite;
+  }
+  
+  @keyframes blink {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
+  }
+  
+  @media screen and (max-width: 430px) {
+    .typewriter p {
+      font-size: 1.5rem;
+      margin-top: 2.5rem;
+    }
+  }
